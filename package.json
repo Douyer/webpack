@@ -4,9 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --config=config/webpack.dev.js",
+    "server": "webpack-dev-server --config=config/webpack.dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Douyer/webpack.git"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Douyer/webpack/issues"
+  },
+  "homepage": "https://github.com/Douyer/webpack#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0"
+  }
 }
