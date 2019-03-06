@@ -18,7 +18,20 @@ module.exports = {
         filename: '[name].js'
     },
     //模块
-    module:{},
+    module:{
+        rules:[
+            //加载CSS
+            {
+                test: /\.css$/,
+                use: [
+                    {loader: "style-loader"},
+                    {loader: "css-loader"}
+                   
+                ]
+    
+            }
+        ]
+    },
     //插件
     plugins:[
         new htmlPlugins({
